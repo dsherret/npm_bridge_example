@@ -1,5 +1,5 @@
 {
-  "npmDependencies": {
+  "dependencies": {
     "ts-morph": "^14.0.0"
   }
 }

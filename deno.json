@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "npm:install": "deno run -A --no-check --reload https://deno.land/x/npm_bridge/main.ts",
+    "npm:install": "deno run -A --no-check https://deno.land/x/npm_bridge@0.0.2/main.ts",
     "run": "deno run --allow-read --allow-env --unstable main.ts"
   },
   "importMap": "./npm_deps/import_map.json"
