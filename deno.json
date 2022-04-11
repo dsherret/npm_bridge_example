@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "npm:install": "deno run -A --no-check https://deno.land/x/npm_bridge@0.0.3/main.ts",
+    "npm": "deno run -A --no-check https://deno.land/x/npm_bridge@0.0.3/main.ts",
     "run": "deno run --allow-read --allow-env --unstable main.ts",
     "copyfiles": "deno run -A --unstable --no-check ./npm_deps/copyfiles.bin.ts",
     "mkdirp": "deno run -A --unstable --no-check ./npm_deps/mkdirp.bin.ts"
