@@ -1,9 +1,10 @@
 {
   "tasks": {
-    "npm": "deno run -A --no-check https://deno.land/x/npm_bridge@0.0.4/main.ts",
+    "npm": "deno run -A --no-check https://deno.land/x/npm_bridge@0.0.5/npm.ts",
+    "npx": "deno run -A --no-check https://deno.land/x/npm_bridge@0.0.5/npx.ts",
     "run": "deno run --allow-read --allow-env --unstable main.ts",
-    "copyfiles": "deno run -A --unstable --no-check ./npm_deps/copyfiles.bin.js",
-    "mkdirp": "deno run -A --unstable --no-check ./npm_deps/mkdirp.bin.js"
+    "copyfiles": "deno task npx -A copyfiles",
+    "mkdirp": "deno task npx -A mkdirp"
   },
   "importMap": "./npm_deps/import_map.json"
 }
